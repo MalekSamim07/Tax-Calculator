@@ -1,0 +1,38 @@
+smart calculator using if else
+print('='*60)
+print(' ')
+print('                    -SMART INCOME TAX CALCULATOR-'                    ) 
+print(' ') 
+print('='*60)
+print(' ')
+income= int(input('Enter your annual income:-'))
+print(' ')
+if income >= 0 and income <=400000:
+    print('According to your income,didnt need to pay tax')
+
+elif income >=400001 and income <=800000:
+    print('You have to pay 5 persent tax')
+    TAX = income*5 / 100
+    print(TAX)
+
+elif income >=800001 and income <=1200000:
+    print('You have to pay 10 persent tax')
+    TAX = income*10 /100
+    print(TAX)
+
+elif income >=1200001 and income <=1600000:
+    print('You have to pay 15 persent tax')
+    TAX = income*15 /100
+
+elif income >=1600001 and income <=2000000:
+    print('You have to pay 20 persent tax')
+    TAX = income*20 /100
+
+else:
+    print('You have to pay 30 persent tax')
+    TAX = income*30 /100
+
+
+
+print(' ')
+print('='*60)
